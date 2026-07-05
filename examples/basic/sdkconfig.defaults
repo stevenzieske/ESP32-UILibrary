@@ -1,0 +1,12 @@
+# Required settings for the Waveshare ESP32-P4-WIFI6-Touch-LCD-4.3.
+# The display framebuffers live in PSRAM, so PSRAM must be enabled and fast.
+CONFIG_IDF_TARGET="esp32p4"
+
+# PSRAM (32 MB hex-mode @ 200 MHz on this board)
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_MODE_HEX=y
+CONFIG_SPIRAM_SPEED_200M=y
+CONFIG_SPIRAM_USE_MALLOC=y
+
+# CPU at full speed
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_360=y

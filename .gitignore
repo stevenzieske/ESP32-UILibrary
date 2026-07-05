@@ -67,3 +67,14 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ESP-IDF
+managed_components/
+sdkconfig.old
+flash_project_args
+flasher_args.json
+dist/
+
+# ESP-IDF monitor / core dumps
+coredump.*
+*.uf2
